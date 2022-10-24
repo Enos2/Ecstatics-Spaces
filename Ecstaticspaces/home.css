@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+position: relative;
+width: 1512px;
+height: 2710px;
+
+background-color: white;
+}
+
+.container-1 {
+    width: 1512px;
+    height: 903.46px;
+    
+    background-image: url(Rectangle.jpg);
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.group {
+ position: absolute;
+width: 419.12px;
+ height: 538.33px;
+left: 114.94px;
+top: 447.9px;   
+box-sizing: border-box;
+
+position: absolute;
+width: 418px;
+height: 490.29px;
+left: 115.2px;
+top: 447.9px;
+
+background: #FFFFFF;
+border: 3px solid black;
+backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 17px;
+}
+.h1 {
+position: absolute;
+width: 337.13px;
+height: 193.84px;
+left: 155.63px;
+top: 469.44px;
+
+font-family: 'Bebas Kai';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+
+color: #000000;
+
+}
+
+
+.container.container-2 {
+position: absolute;
+width: 1512px;
+height: 786.42px;
+left: 0px;
+top: 882.55px;
+
+background-color: rgba(195, 153, 107, 0.24);
+}
