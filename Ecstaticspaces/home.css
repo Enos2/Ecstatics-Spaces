@@ -2,73 +2,88 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
 
-.container {
-position: relative;
-width: 1512px;
-height: 2710px;
+}
+.logo{
+    width: 250px;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: black;
 
-background-color: white;
+}
+.content p{
+    font-size: 20px;
+    color: black;
+
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content .btn{
+    display: ruby;
+    background: linear-gradient(45deg,#004cf1 #000000);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 8px 22px rgba(0, 0, 0, 0.15);
 }
 
-.container-1 {
-    width: 1512px;
-    height: 903.46px;
+.feature{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    bottom: 265px;
+    right: 16px;
+    left: 900px;
     
-    background-image: url(Rectangle.jpg);
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.group {
- position: absolute;
-width: 419.12px;
- height: 538.33px;
-left: 114.94px;
-top: 447.9px;   
-box-sizing: border-box;
-
-position: absolute;
-width: 418px;
-height: 490.29px;
-left: 115.2px;
-top: 447.9px;
-
-background: #FFFFFF;
-border: 3px solid black;
-backdrop-filter: blur(15px);
-/* Note: backdrop-filter has minimal browser support */
-
-border-radius: 17px;
-}
-.h1 {
-position: absolute;
-width: 337.13px;
-height: 193.84px;
-left: 155.63px;
-top: 469.44px;
-
-font-family: 'Bebas Kai';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 77px;
-
-color: #000000;
-
+  
 }
 
 
-.container.container-2 {
-position: absolute;
-width: 1512px;
-height: 786.42px;
-left: 0px;
-top: 882.55px;
 
-background-color: rgba(195, 153, 107, 0.24);
+@media screen and (max-width:767px){
+
+}
+@media screen and (min-width:767px) and (max-width:1023px){
+
+}
+@media screen and (min-width:1024px){
+
 }
