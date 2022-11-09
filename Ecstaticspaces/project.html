@@ -12,6 +12,7 @@
         }
         body{
             background-color: antiquewhite;
+            
         }
         .containner{
             width: 80%;
@@ -190,17 +191,150 @@
         .social-icon {
             color: #aaa;
         }
+        h1{
+          padding: 60px;
+          color: black;
+          text-align: center;
+      }
+      /********# Gallery photos #********/ 
 
-        
-        @media screen and (max-width:767px){
+      .gallerey{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        margin: 5% auto;
+        box-sizing: border-box;
+      }
+      .gallerey:hover .active{
+        flex-basis: 0;
+      }
+      .amage-box{
+        margin: 0  1%;
+        flex-grow: 1;
+        flex-basis: 0;
+        transition: 5s;
 
-        }
-        @media screen and (min-width:767px) and (max-width:1023px){
-        
-        }
-        @media screen and (min-width:1024px){
-        
-        }
+      }
+      .amage-box img{
+        width: 100%;
+        height: 100%;
+       transition: 4s;
+        object-fit:fill;
+      }
+      .amage-box:hover{
+        flex-basis: 20%;
+      }
+      .active{
+        flex-basis: 50%;
+      }
+      .amage-box:nth-child(1):hover{
+        flex-basis: 50%;
+      }
+
+        /********# MEDIA #*********/
+        @media screen and (max-width: 1250px) {
+            .blogs {
+              grid-template-columns: repeat(2, 1fr);
+              margin-top: 6rem;
+            }
+          
+            .portfolios {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          
+            .header-content .right-header {
+              padding-right: 9rem;
+            }
+          }
+          @media screen and (max-width: 660px) {
+            .blogs {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          
+            .portfolios {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+          @media screen and (max-width: 1070px) {
+            .about-container {
+              grid-template-columns: repeat(1, 1fr);
+            }
+            .about-container .right-about {
+              padding-top: 2.5rem;
+            }
+          
+            .main-title h2 {
+              font-size: 4rem;
+            }
+            .main-title h2 span {
+              font-size: 4rem;
+            }
+            .main-title h2 .bg-text {
+              font-size: 4.5rem;
+            }
+          }
+          @media screen and (max-width: 970px) {
+            .container {
+              padding: 7rem 6rem;
+            }
+          
+            .about-container .left-about {
+              padding-right: 0rem;
+            }
+          
+            .header-content {
+              grid-template-columns: repeat(1, 1fr);
+              padding-bottom: 6rem;
+            }
+          
+            .left-header .h-shape {
+              display: none;
+            }
+            .left-header .image {
+              width: 90% !important;
+              margin: 0 auto !important;
+            }
+          
+            .right-header {
+              grid-row: 1;
+              padding-right: 0rem !important;
+              width: 90%;
+              margin: 0 auto;
+            }
+            .right-header .name {
+              font-size: 2.5rem !important;
+              text-align: center;
+              padding-top: 3rem;
+            }
+          }
+          @media screen and (max-width: 700px) {
+            .container {
+              padding: 7rem 3rem;
+            }
+          
+            .about-stats .progress-bars {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          
+            .about-container .right-about {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          
+            .timeline {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          
+            .main-title h2 {
+              font-size: 3rem;
+            }
+            .main-title h2 span {
+              font-size: 3rem;
+            }
+            .main-title h2 .bg-text {
+              font-size: 4rem;
+            }
+          }
+          
         
     </style>
 </head>
@@ -213,7 +347,7 @@
                                  <li><a href="home.html">HOME</a></li>
                                  <li><a href="about.html">ABOUT</a></li>
                                  <li><a href="project.html">PROJECTS</a></li>
-                                 <li><a href="contact.html">CONTUCT US</a></li>
+                                 <li><a href="contuc.html">CONTUCT US</a></li>
                            </ul>
                      </nav>
   
@@ -254,11 +388,36 @@
         </video>
         <img src="close.png" class="close-btn" onclick="stopVideo()">
     </div>
+
+
+                 <!-----------# Photo galery #------------------>
+
+    <h1>Our Photos</h1>
+    <div class="gallerey">
+        <div class="amage-box active">
+            <img src="Rectangle 1 (1).png">
+        </div>
+        <div class="amage-box">
+          <img src="Rectangle 777.png">
+      </div>
+      <div class="amage-box">
+        <img src="Rectangle 778.png">
+    </div>
+    <div class="amage-box">
+      <img src="question.png">
+  </div>
+  <div class="amage-box">
+    <img src="Rectangle 780.png">
+</div>
+    </div>
+
+
+    <!--------------------# footer #--------------------->
     <div class="footer">
         <div class="bordor"></div>
     </div>
     <div class="links">
-        <div class="text">© 2020 Workflow, Inc. All rights reserved</div<div class="copy-t">© 2022 Ecstatics Spaces, Inc. All rights reserved.</div>
+        <div class="text"></div<div class="copy-t">© 2022 Ecstatics Spaces, Inc. All rights reserved.</div>
         <div class="link-s">
            
                 <a class="social-icon" href="https://www.youtube.com/channel/UCKCacXrnqyMg9hda6wnWvZQ"><ion-icon name="logo-youtube"></ion-icon></a>

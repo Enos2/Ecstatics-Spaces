@@ -12,11 +12,13 @@
         }
         body{
             background-color: antiquewhite;
+            width: 1366px;
         }
         .containner{
-            width: 80%;
+            width: 100%;
             margin: 020px auto 0;
         }
+        
         .logo{
             width: 250px;
             cursor: pointer;
@@ -28,6 +30,104 @@
             display: flex;
             align-items: center;
         }
+        .row{
+            width: 80%;
+            height: 15;
+            margin: 89px;
+            display:flex;
+            align-items: center;
+            padding-left: 300px;
+            
+        }
+        .about-1{
+            margin: 30px;
+            padding: 5px;
+            padding-left: 450px;
+        }
+        .about-1 h1{
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        .about-1 p{
+            text-align: center;
+            font-size: 25px;
+            padding: 3px;
+            color: rgb(10, 10, 10);
+        }
+        
+        /*===========================
+         adding style to about items 
+        ============================*/
+        
+        .about-item{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            height: 200px;
+            width: 300px;
+            background-color: rgb(124, 98, 98);
+            padding: 80px 30px;
+            box-shadow: 0 0 9px rgb(139, 139, 139);
+            padding-left: 30px;
+        }
+        
+        /*======================================
+        adding style to the icons(book,globe,pencil)
+        =========================================*/
+        .about-item i{
+            font-size: 43px;
+            margin: 0;
+        }
+        
+        /*======================================
+        adding style to h3(heading 3) of each item 
+        =========================================*/
+        .about-item h3{
+            font-size: 25px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        /*======================================
+        styling the hr (the blue line in between)
+        =========================================*/
+        .about-item hr{
+            width: 46px;
+            height: 3px;
+            background-color: #000000;
+            margin: 0 auto;
+            border: none;
+            text-align: center;
+        }
+        
+        /*========================================
+        hover means when you put your cursor over it
+        =========================================*/
+        .about-item:hover{
+            background-color: #b1b5b8;
+        }
+        .about-item:hover i,
+        .about-item:hover h3,
+        .about-item:hover p{
+            color: #fff;
+        }
+        .about-item:hover hr{
+            background-color: #fff;
+        }
+        
+        /*==============================================================================
+        translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by  
+        ================================================================================*/
+        .about-item:hover i{
+            transform: translateY(-20px);
+        }
+        .about-item:hover i,
+        .about-item:hover h3,
+        .about-item:hover hr{
+            transition: all 400ms ease-in-out;
+        }
+        
         nav{
             flex: 1;
             padding-left: 60px;
@@ -39,8 +139,99 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: black;
+            color: rgb(0, 0, 0);
         }
+        footer{
+            background: #333333;
+            padding-top: 300px;
+            padding: 50px;
+            width: 1366px;
+        }
+        footer p{
+            color: #fff;
+        }
+        section{
+            align-items: center;
+            
+        }
+
+
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: -100vh;
+            width: 100px;
+            height: 80%;
+            left: 53px;
+            top: 90px;
+              
+        }
+        .bordor{
+            width: 1900% ;
+            align-self: center;
+            height: 1px;            
+            background: #000000;        
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;   
+        }
+        .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 32px 0px 0px;
+            gap: 500px;
+            
+            width: 1400px;
+            height: 56px;
+            
+            
+            /* Inside auto layout */
+            
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;    
+        }
+        .text{
+         
+            width: 315px;
+            height: 24px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #9CA3AF;
+            flex: none;
+            order: 0;
+            flex-grow: 0;    
+        }
+        .link-s {
+        display: flex;
+        flex-direction: row;
+        align-items: 70px;
+        padding: 0px;
+        gap: 25px;
+        width: 120px;
+        height: 24px;
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        }
+        
+        .social-icon {
+            color: #aaa;
+        }
+        h1{
+          padding: 60px;
+          color: black;
+          text-align: center;
+      }
 
 
 
@@ -66,10 +257,75 @@
                                      <li><a href="home.html">HOME</a></li>
                                      <li><a href="about.html">ABOUT</a></li>
                                      <li><a href="project.html">PROJECTS</a></li>
-                                     <li><a href="contact.html">CONTUCT US</a></li>
+                                     <li><a href="contuc.html">CONTUCT US</a></li>
                                </ul>
                          </nav>
         </div>
+        <section id="ABOUT-1">
+            <div class="about-1">
+                <h1> ABOUT US </h1>
+                <P>sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio sectetur minima soluta nulla, alias tenetur doloribus vitae quo eaque, quae illo!fugit tempora ipsum maiores dolorum enim, beatae qui quasisint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio sectetur minima soluta nulla, alias tenetur doloribus vitae quo eaque, quae illo!fugit tempora ipsum maiores dolorum enim, beatae qui quasi</P>
+            </div>
+            <div id="about-2">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                           <div class="about-item text-center">
+                            <i class="fa fa-book"></i>
+                            <h3>MISSION</h3>
+                            <hr>
+                            <p> Lorem ipsum dolor sit amet, consealias tenetur doloribus vitae quo eaque, quae illo!fugit tempora ipsum maiores dolorum enim, beatae qui quasialias tenetur doloribus vitae quo eaque, quae illo!fugit tempora ipsum maiores dolorum enim, beatae qui quasictetur adipisicing elit. Ducimus optio  </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="about-item text-center">
+                            <i class="fa fa-globe"></i>
+                            <h3>VISSION</h3>
+                            <hr>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio sectetur minima soluta nulla, alias tenetur doloribus vitae quo eaque, quae illo!fugit tempora ipsum maiores dolorum enim, beatae qui quasialias tenetur doloribus vitae quo eaque, quae illo!fugit tempora ipsum maiores  </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="about-item text-center">
+                            <i class="fa fa-pencil"></i>
+                            <h3>ACHIEVEMENTS</h3>
+                            <hr>
+                            <p> sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio sectetur minima soluta doloribus vitae quo eaque, quae illo!fugit tempora ipsum maiores dolorum enim, be doloribus vitae quo eaque, quae illo!fugit tempora ipsum maiores dolorum enim, beatae qui quasi </p>
+                            </div>
+                         </div>
+                     </div>
+                   </div>
+                </div>
+             </div>   
+             
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        </section>
+        
+    </div>
+    <div class="footer">
+        <div class="bordor"></div>
+    </div>
+    <div class="links">
+        <div class="text"></div<div class="copy-t">© 2022 Ecstatics Spaces, Inc. All rights reserved.</div>
+        <div class="link-s">
+           
+                <a class="social-icon" href="https://www.youtube.com/channel/UCKCacXrnqyMg9hda6wnWvZQ"><ion-icon name="logo-youtube"></ion-icon></a>
+                
+           
+           
+                <a class="social-icon" href="https://www.tiktok.com/search?q=Ecstatics%20Spaces&t=1666609419397"><ion-icon name="logo-tiktok"></ion-icon></a>
+               
+            
+            
+                <a class="social-icon" href="https://www.instagram.com/ecstaticspaces/"><ion-icon name="logo-instagram"></ion-icon></a>
+
+
+                <a class="social-icon" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                
+           
+        </div>
+    </div>
     </div>
     
 </body>

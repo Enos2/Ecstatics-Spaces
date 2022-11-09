@@ -75,9 +75,19 @@ nav ul li a {
     
   
 }
-
-
-
+.social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+.social-links a{
+    text-decoration:none;
+    font-style:initial;
+    color: black;
+    padding-right: 20px;
+    font-size: 15px;
+}
 @media screen and (max-width:767px){
 
 }
